@@ -1,0 +1,44 @@
+WebAPI + EF Instructions
+
+Incase you don't have dotnet installed
+https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+
+If you don't have dotnet EF installed:
+	dotnet tool update --global dotnet-ef
+
+
+Create a directory for your solution and projects
+	cd to target
+	mkDir Eagles
+	cd Eagles
+
+To add new solution file (solution contains many projects)
+	dotnet new sln -n Eagles
+
+To list all the options for the WebAPI template:
+	dotnet new webapi -h
+
+Create project ASP.NET Core Web API
+	dotnet new webapi -f net8.0 -n EaglesAPI --use-controllers
+
+Add the newly created project to the Solution
+	dotnet sln add EaglesAPI/EaglesAPI.csproj
+
+Create project for EF
+	dotnet new classlib -f net8.0 -n EaglesEF
+
+Add it to solution
+	dotnet sln add EaglesEF/EaglesEF.csproj
+
+Add a project reference (EaglesAPI references EaglesEF)
+        cd EaglesAPI
+	dotnet add reference ..\EaglesEF\EaglesEF.csproj
+
+Open Eagles.sln
+
+CD to EaglesEF directory 
+	cd EaglesEF
+
+Add required packages in the package manager console
+	dotnet add package Oracle.EntityFrameworkCore
+	dotnet add package Microsoft.EntityFrameworkCore.Tools

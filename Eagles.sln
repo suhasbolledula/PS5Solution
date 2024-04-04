@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EaglesAPI", "EaglesAPI\EaglesAPI.csproj", "{5676B3E2-E30C-4EBE-915C-9F2049AB18C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EaglesEF", "EaglesEF\EaglesEF.csproj", "{043F843A-63FB-412A-931A-B77C69E947E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{8AD90966-710E-42A7-9D0E-52D42A19B7B6}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.txt = Notes.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5676B3E2-E30C-4EBE-915C-9F2049AB18C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5676B3E2-E30C-4EBE-915C-9F2049AB18C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5676B3E2-E30C-4EBE-915C-9F2049AB18C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5676B3E2-E30C-4EBE-915C-9F2049AB18C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043F843A-63FB-412A-931A-B77C69E947E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043F843A-63FB-412A-931A-B77C69E947E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043F843A-63FB-412A-931A-B77C69E947E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043F843A-63FB-412A-931A-B77C69E947E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
