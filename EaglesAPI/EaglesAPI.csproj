@@ -14,4 +14,8 @@
     <ProjectReference Include="..\EaglesEF\EaglesEF.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\UD\" />
+  </ItemGroup>
+
 </Project>
