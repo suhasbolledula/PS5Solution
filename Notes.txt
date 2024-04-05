@@ -42,3 +42,6 @@ CD to EaglesEF directory
 Add required packages in the package manager console
 	dotnet add package Oracle.EntityFrameworkCore
 	dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+DBScaffold, replace user/pw
+	dotnet ef dbcontext scaffold "Data Source=SPRING2024PDB;User ID=USER;Password=PW;" Oracle.EntityFrameworkCore --namespace Eagles.EF.Models --context-namespace Eagles.EF.Data --output-dir Models --context-dir Data --context "EaglesOracleContext" --data-annotations --no-onconfiguring --force
