@@ -1,4 +1,13 @@
+using Eagles.EF.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("EaglesOracleConnection");
+builder.Services.AddDbContext<EaglesOracleContext>
+(options => options.UseOracle(connectionString)
+.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
+);
 
 // Add services to the container.
 
